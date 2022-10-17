@@ -15,6 +15,10 @@ body {
     font-weight: 300;
     line-height: 1.3;
     color: $GrayishBlue;
+
+    &.noscroll {
+        overflow: hidden;
+    }
 }
 
 a , a:hover, a:visited {
@@ -30,6 +34,12 @@ button, .button {
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+// Spacing
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 // Flexbox

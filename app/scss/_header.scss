@@ -5,7 +5,7 @@
     &.open {
 
 
-        .header__menu {
+        .header__toggle {
             > span:first-child {
                 transform: rotate(45deg);
             }
@@ -21,7 +21,10 @@
     }
 
     nav {
-        padding: 1.0625rem 1.5rem;
+        position: relative;
+        background-color: #fff;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
 
     &__logo {
@@ -32,7 +35,7 @@
         }
     }
 
-    &__menu {
+    &__toggle {
 
         > span {
             display: block;
@@ -48,6 +51,25 @@
         }
 
         
+    }
+
+    &__menu {
+        background-color: $White;
+        // margin: 0 1.5rem;
+        padding: 1.625rem;
+        border-radius: 5px;
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        margin-top: 1.5rem;
+        transform: translateX(-50%);
+
+        a {
+            color: $DarkBlue;
+            padding: 0.625rem;
+            display: block;
+            text-align: center;
+        }
     }
 
     &__links {
@@ -98,7 +120,7 @@
         // display: none;
         opacity: 0;
         position: fixed;
-        top: 3.8rem;
+        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
